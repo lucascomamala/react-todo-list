@@ -7,7 +7,9 @@ class InputTodo extends React.Component {
   };
 
   onChange = e => {
-    console.log("hello");
+    this.setState({
+      title: e.target.value
+    });
   };
   
   render() {
