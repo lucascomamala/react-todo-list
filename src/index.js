@@ -4,11 +4,11 @@ import { BrowserRouter } from "react-router-dom"
 import TodoContainer from "./components/TodoContainer"
 import "./app.css"
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <TodoContainer />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById("root")
-)
+);
