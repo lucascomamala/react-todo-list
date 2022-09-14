@@ -76,7 +76,7 @@ const TodoContainer = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home addTodoProps={addTodoItem} todos={todos} handleChangeProps={handleChange} deleteTodoProps={delTodo} setUpdate={setUpdate} />} />
+        <Route path="/" component ={Home} element={<Home addTodoProps={addTodoItem} todos={todos} handleChangeProps={handleChange} deleteTodoProps={delTodo} setUpdate={setUpdate} />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
